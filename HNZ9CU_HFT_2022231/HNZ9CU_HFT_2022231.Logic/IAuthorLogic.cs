@@ -9,10 +9,10 @@ namespace HNZ9CU_HFT_2022231.Logic
 {
     public interface IAuthorLogic
     {
-        public bool Create(AuthorLogic newbook);
-        public AuthorLogic ReadOne(int id);
-        public IQueryable<AuthorLogic> ReadAll();
-        public bool Update(AuthorLogic newbook, int id);
+        public bool Create(Author newbook);
+        public Author ReadOne(int id);
+        public IQueryable<Author> ReadAll();
+        public bool Update(Author newbook, int id);
         public bool Delete(int id);
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HNZ9CU_HFT_2022231.Models;
+using HNZ9CU_HFT_2022231.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,29 +10,60 @@ namespace HNZ9CU_HFT_2022231.Logic
 {
     public class AuthorLogic : IAuthorLogic
     {
-        public bool Create(AuthorLogic newbook)
+        protected IAuthorRepository autrepo;
+
+        public AuthorLogic(IAuthorRepository authrep)
         {
-            throw new NotImplementedException();
+            autrepo = authrep;
+        }
+
+        public bool Create(Author newaut)
+        {
+            try
+            {
+                autrepo.Create(newaut);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                autrepo.Delete(id);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
-        public IQueryable<AuthorLogic> ReadAll()
+        public IQueryable<Author> ReadAll()
         {
-            throw new NotImplementedException();
+            return autrepo.ReadAll();
         }
 
-        public AuthorLogic ReadOne(int id)
+        public Author ReadOne(int id)
         {
-            throw new NotImplementedException();
+            return autrepo.ReadOne(id);
         }
 
-        public bool Update(AuthorLogic newbook)
+        public bool Update(Author newaut, int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                autrepo.Update(newaut, id);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }
