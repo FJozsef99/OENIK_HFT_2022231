@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HNZ9CU_HFT_2022231", "HNZ9CU_HFT_2022231\HNZ9CU_HFT_2022231.csproj", "{E114A9E6-727F-41E3-9279-020281D89764}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HNZ9CU_HFT_2022231.Models", "HNZ9CU_HFT_2022231.Models\HNZ9CU_HFT_2022231.Models.csproj", "{08791B56-1DEA-46DF-838C-E1236AB8774A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E114A9E6-727F-41E3-9279-020281D89764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E114A9E6-727F-41E3-9279-020281D89764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E114A9E6-727F-41E3-9279-020281D89764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E114A9E6-727F-41E3-9279-020281D89764}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08791B56-1DEA-46DF-838C-E1236AB8774A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08791B56-1DEA-46DF-838C-E1236AB8774A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08791B56-1DEA-46DF-838C-E1236AB8774A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08791B56-1DEA-46DF-838C-E1236AB8774A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78D4116E-1523-40EB-8EEF-74BCEE6932CC}
+	EndGlobalSection
+EndGlobal
