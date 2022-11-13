@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\ClassLibrary1\\ClassLibrary1.csproj": {}
+    "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Client\\HNZ9CU_HFT_2022231.Client.csproj": {}
   },
   "projects": {
-    "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\ClassLibrary1\\ClassLibrary1.csproj": {
+    "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Client\\HNZ9CU_HFT_2022231.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\ClassLibrary1\\ClassLibrary1.csproj",
-        "projectName": "ClassLibrary1",
-        "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectUniqueName": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Client\\HNZ9CU_HFT_2022231.Client.csproj",
+        "projectName": "HNZ9CU_HFT_2022231.Client",
+        "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Client\\HNZ9CU_HFT_2022231.Client.csproj",
         "packagesPath": "C:\\Users\\fjrow\\.nuget\\packages\\",
-        "outputPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\ClassLibrary1\\obj\\",
+        "outputPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HNZ9CU_HFT_2022231
+namespace HNZ9CU_HFT_2022231.Client
 {
     internal class Program
     {
