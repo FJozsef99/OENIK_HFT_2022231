@@ -16,12 +16,17 @@ namespace HNZ9CU_HFT_2022231.Models
         public DateTime RelaseDate { get; set; }
         public int PagenNumber { get; set; }
         public int Rating { get; set; }
+
+        [ForeignKey(nameof(Author))]
+        public int AuthorId { get; set; }
+
+        [ForeignKey(nameof(Publisher))]
+        public int PublisherId { get; set; }
+
         [NotMapped]
         public virtual Author Author { get; set; }
+
         [NotMapped]
         public virtual Publisher Publisher { get; set; }
-
-
-
     }
 }
