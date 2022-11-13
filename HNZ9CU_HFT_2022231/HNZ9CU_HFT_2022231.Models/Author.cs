@@ -16,7 +16,8 @@ namespace HNZ9CU_HFT_2022231.Models
         public int Id { get; set; }
         [MaxLength]
         public string Name { get; set; }
-        public int Age { get; set; }
+        public int BirthDate { get; set; }
+        public bool IsAlive { get; set; }
         public string Country { get; set; }
         [NotMapped]
         public virtual ICollection<Book> Books { get; set; }

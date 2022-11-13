@@ -13,9 +13,9 @@ namespace HNZ9CU_HFT_2022231.Models
         [MaxLength(100)]
         public string Title { get; set; }
         public int Price { get; set; }
-        public DateTime RelaseDate { get; set; }
+        public int RelaseDate { get; set; }
         public int PagenNumber { get; set; }
-        public int Rating { get; set; }
+        public double Rating { get; set; }
 
         [ForeignKey(nameof(Author))]
         public int AuthorId { get; set; }

@@ -16,10 +16,11 @@ namespace HNZ9CU_HFT_2022231.Models
         public int Id { get; set; }
         [MaxLength(100)]
         public string Name { get; set; }
-        public DateTime EstablishDate { get; set; }
-        public int Address { get; set; }
-        public int Rating { get; set; }
-        public int PublishedBooks { get; set; }
+        public int EstablishDate { get; set; }
+        public string City { get; set; }
+        public string Address { get; set; }
+        public double Rating { get; set; }
+        public int NumberOfPublishedBooks { get; set; }
         [NotMapped]
         public virtual ICollection<Book> Books { get; set; }
     }
