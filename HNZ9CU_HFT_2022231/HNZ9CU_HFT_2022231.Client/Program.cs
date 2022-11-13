@@ -2,7 +2,7 @@
 
 namespace HNZ9CU_HFT_2022231.Client
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {

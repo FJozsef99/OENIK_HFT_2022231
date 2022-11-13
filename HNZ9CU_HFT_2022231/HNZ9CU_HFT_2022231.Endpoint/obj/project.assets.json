@@ -1,11 +1,69 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "HNZ9CU_HFT_2022231.Logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "HNZ9CU_HFT_2022231.Models": "1.0.0",
+          "HNZ9CU_HFT_2022231.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HNZ9CU_HFT_2022231.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HNZ9CU_HFT_2022231.Logic.dll": {}
+        }
+      },
+      "HNZ9CU_HFT_2022231.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/HNZ9CU_HFT_2022231.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HNZ9CU_HFT_2022231.Models.dll": {}
+        }
+      },
+      "HNZ9CU_HFT_2022231.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "HNZ9CU_HFT_2022231.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HNZ9CU_HFT_2022231.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HNZ9CU_HFT_2022231.Repository.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "HNZ9CU_HFT_2022231.Logic/1.0.0": {
+      "type": "project",
+      "path": "../HNZ9CU_HFT_2022231.Logic/HNZ9CU_HFT_2022231.Logic.csproj",
+      "msbuildProject": "../HNZ9CU_HFT_2022231.Logic/HNZ9CU_HFT_2022231.Logic.csproj"
+    },
+    "HNZ9CU_HFT_2022231.Models/1.0.0": {
+      "type": "project",
+      "path": "../HNZ9CU_HFT_2022231.Models/HNZ9CU_HFT_2022231.Models.csproj",
+      "msbuildProject": "../HNZ9CU_HFT_2022231.Models/HNZ9CU_HFT_2022231.Models.csproj"
+    },
+    "HNZ9CU_HFT_2022231.Repository/1.0.0": {
+      "type": "project",
+      "path": "../HNZ9CU_HFT_2022231.Repository/HNZ9CU_HFT_2022231.Repository.csproj",
+      "msbuildProject": "../HNZ9CU_HFT_2022231.Repository/HNZ9CU_HFT_2022231.Repository.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "HNZ9CU_HFT_2022231.Logic >= 1.0.0",
+      "HNZ9CU_HFT_2022231.Models >= 1.0.0",
+      "HNZ9CU_HFT_2022231.Repository >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\fjrow\\.nuget\\packages\\": {},
@@ -38,7 +96,17 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj": {
+              "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj"
+            },
+            "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj": {
+              "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj"
+            },
+            "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj": {
+              "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
