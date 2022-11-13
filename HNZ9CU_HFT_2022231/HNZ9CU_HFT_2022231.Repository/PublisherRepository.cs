@@ -16,7 +16,8 @@ namespace HNZ9CU_HFT_2022231.Repository
 
         public override void Update(Publisher newitem, int id)
         {
-            Publisher old = newitem;
+            Publisher old = ReadOne(id);
+
             old.City = newitem.City;
             old.Address = newitem.Address;
             old.Rating = newitem.Rating;

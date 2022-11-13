@@ -19,16 +19,16 @@ namespace HNZ9CU_HFT_2022231.Repository
 
         public void Delete(int id)
         {
-            dbctx.Set<T>().Remove(GetOne(id));
+            dbctx.Set<T>().Remove(ReadOne(id));
             dbctx.SaveChanges();
         }
 
-        public IQueryable<T> GetAll()
+        public IQueryable<T> ReadAll()
         {
             return dbctx.Set<T>();
         }
 
-        public T GetOne(int id)
+        public T ReadOne(int id)
         {
             return dbctx.Set<T>().Find(id);
         }

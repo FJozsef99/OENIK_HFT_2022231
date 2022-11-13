@@ -15,7 +15,8 @@ namespace HNZ9CU_HFT_2022231.Repository
         }
         public override void Update(Author newitem, int id)
         {
-            Author old = GetOne(id);
+            Author old = ReadOne(id);
+
             old.IsAlive = newitem.IsAlive;
             old.Country = newitem.Country;
         }

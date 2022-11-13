@@ -9,8 +9,8 @@ namespace HNZ9CU_HFT_2022231.Repository
     public interface IRepository<T> where T : class
     {
         public void Create(T newitem);
-        T GetOne(int id);
-        IQueryable<T> GetAll();
+        T ReadOne(int id);
+        IQueryable<T> ReadAll();
         abstract public void Update(T newitem, int id);
         public void Delete(int id);
     }
