@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fjrow\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj",
+      "projectUniqueName": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj",
       "projectName": "HNZ9CU_HFT_2022231.Models",
-      "projectPath": "C:\\Users\\fjrow\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj",
+      "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj",
       "packagesPath": "C:\\Users\\fjrow\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fjrow\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\obj\\",
+      "outputPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
