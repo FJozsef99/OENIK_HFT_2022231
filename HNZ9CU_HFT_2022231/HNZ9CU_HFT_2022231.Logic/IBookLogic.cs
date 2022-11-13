@@ -11,7 +11,7 @@ namespace HNZ9CU_HFT_2022231.Logic
         public bool Create(Book newbook);
         public Book ReadOne(int id);
         public IQueryable<Book> ReadAll();
-        public bool Update(Book newbook);
+        public bool Update(Book newbook, int id);
         public bool Delete(int id);
 
         //non crud

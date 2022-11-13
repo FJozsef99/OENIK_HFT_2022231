@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace HNZ9CU_HFT_2022231.Logic
 {
-    public interface IAuthorLogic
+    public interface IPublisherLogic
     {
-        public bool Create(AuthorLogic newbook);
-        public AuthorLogic ReadOne(int id);
-        public IQueryable<AuthorLogic> ReadAll();
-        public bool Update(AuthorLogic newbook, int id);
+        public bool Create(Publisher newbook);
+        public Publisher ReadOne(int id);
+        public IQueryable<Publisher> ReadAll();
+        public bool Update(Publisher newbook, int id);
         public bool Delete(int id);
     }
 }
