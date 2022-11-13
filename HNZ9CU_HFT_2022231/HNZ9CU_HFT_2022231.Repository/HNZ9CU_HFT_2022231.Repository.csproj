@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HNZ9CU_HFT_2022231.Data\HNZ9CU_HFT_2022231.Data.csproj" />
     <ProjectReference Include="..\HNZ9CU_HFT_2022231.Models\HNZ9CU_HFT_2022231.Models.csproj" />
   </ItemGroup>
 

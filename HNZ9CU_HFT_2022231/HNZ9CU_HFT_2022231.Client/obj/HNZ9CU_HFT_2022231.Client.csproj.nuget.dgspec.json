@@ -390,6 +390,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj": {
+                "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj"
+              },
               "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj": {
                 "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj"
               }

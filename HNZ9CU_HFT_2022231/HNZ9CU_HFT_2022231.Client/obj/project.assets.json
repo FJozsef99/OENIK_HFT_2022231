@@ -1771,6 +1771,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "HNZ9CU_HFT_2022231.Data": "1.0.0",
           "HNZ9CU_HFT_2022231.Models": "1.0.0"
         },
         "compile": {
