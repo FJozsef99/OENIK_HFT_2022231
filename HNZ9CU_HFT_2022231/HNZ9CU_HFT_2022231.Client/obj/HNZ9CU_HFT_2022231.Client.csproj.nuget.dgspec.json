@@ -35,9 +35,6 @@
               "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj": {
                 "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj"
               },
-              "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Endpoint\\HNZ9CU_HFT_2022231.Endpoint.csproj": {
-                "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Endpoint\\HNZ9CU_HFT_2022231.Endpoint.csproj"
-              },
               "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj": {
                 "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj"
               },
@@ -157,78 +154,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Endpoint\\HNZ9CU_HFT_2022231.Endpoint.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Endpoint\\HNZ9CU_HFT_2022231.Endpoint.csproj",
-        "projectName": "HNZ9CU_HFT_2022231.Endpoint",
-        "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Endpoint\\HNZ9CU_HFT_2022231.Endpoint.csproj",
-        "packagesPath": "C:\\Users\\fjrow\\.nuget\\packages\\",
-        "outputPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Endpoint\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\fjrow\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {
-              "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj": {
-                "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj"
-              },
-              "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj": {
-                "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj"
-              },
-              "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj": {
-                "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

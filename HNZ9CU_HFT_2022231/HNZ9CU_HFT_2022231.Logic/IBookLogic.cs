@@ -14,6 +14,17 @@ namespace HNZ9CU_HFT_2022231.Logic
         public bool Update(Book newbook, int id);
         public bool Delete(int id);
 
-        //non crud
+        //non cruds:
+        //Legkedveltebb kiadó könyveinek összára
+        public int FavouritePublisherSumPrice();
+        //Halott írók kiadói listázva
+        public List<Publisher> PublishersOfDeadWriters();
+        //legjobb könyv kiadójának könyveinek átlagértékelése
+        public double AvgRatingOfBestBookPublisher();
+        //
+
+        //
+
+
     }
 }

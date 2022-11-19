@@ -1725,24 +1725,6 @@
           "bin/placeholder/HNZ9CU_HFT_2022231.Data.dll": {}
         }
       },
-      "HNZ9CU_HFT_2022231.Endpoint/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "HNZ9CU_HFT_2022231.Logic": "1.0.0",
-          "HNZ9CU_HFT_2022231.Models": "1.0.0",
-          "HNZ9CU_HFT_2022231.Repository": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/HNZ9CU_HFT_2022231.Endpoint.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HNZ9CU_HFT_2022231.Endpoint.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "HNZ9CU_HFT_2022231.Logic/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -5841,11 +5823,6 @@
       "path": "../HNZ9CU_HFT_2022231.Data/HNZ9CU_HFT_2022231.Data.csproj",
       "msbuildProject": "../HNZ9CU_HFT_2022231.Data/HNZ9CU_HFT_2022231.Data.csproj"
     },
-    "HNZ9CU_HFT_2022231.Endpoint/1.0.0": {
-      "type": "project",
-      "path": "../HNZ9CU_HFT_2022231.Endpoint/HNZ9CU_HFT_2022231.Endpoint.csproj",
-      "msbuildProject": "../HNZ9CU_HFT_2022231.Endpoint/HNZ9CU_HFT_2022231.Endpoint.csproj"
-    },
     "HNZ9CU_HFT_2022231.Logic/1.0.0": {
       "type": "project",
       "path": "../HNZ9CU_HFT_2022231.Logic/HNZ9CU_HFT_2022231.Logic.csproj",
@@ -5870,7 +5847,6 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "HNZ9CU_HFT_2022231.Data >= 1.0.0",
-      "HNZ9CU_HFT_2022231.Endpoint >= 1.0.0",
       "HNZ9CU_HFT_2022231.Logic >= 1.0.0",
       "HNZ9CU_HFT_2022231.Models >= 1.0.0",
       "HNZ9CU_HFT_2022231.Repository >= 1.0.0",
@@ -5911,9 +5887,6 @@
           "projectReferences": {
             "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj": {
               "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj"
-            },
-            "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Endpoint\\HNZ9CU_HFT_2022231.Endpoint.csproj": {
-              "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Endpoint\\HNZ9CU_HFT_2022231.Endpoint.csproj"
             },
             "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj": {
               "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj"

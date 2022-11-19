@@ -11,6 +11,10 @@ namespace HNZ9CU_HFT_2022231.Logic
     public class BookLogic : IBookLogic
     {
         protected IBookRepository bookrepo;
+        protected IAuthorRepository authorrepo;
+        protected IPublisherRepository pubrepo;
+
+
 
         public BookLogic(IBookRepository bookrep)
         {
@@ -64,6 +68,21 @@ namespace HNZ9CU_HFT_2022231.Logic
             {
                 return false;
             }
+        }
+
+        public double AvgRatingOfBestBookPublisher()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int FavouritePublisherSumPrice()
+        {
+            return 0;
+        }
+
+        public List<Publisher> PublishersOfDeadWriters()
+        {
+            throw new NotImplementedException();
         }
     }
 }
