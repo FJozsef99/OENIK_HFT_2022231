@@ -13,6 +13,7 @@ namespace HNZ9CU_HFT_2022231.Endpoint
     {
         public static void Main(string[] args)
         {
+
             CreateHostBuilder(args).Build().Run();
         }
 
