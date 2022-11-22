@@ -19,6 +19,11 @@ namespace HNZ9CU_HFT_2022231.Logic
 
         public bool Create(Author newaut)
         {
+            if (newaut.Name.Length < 1)
+            {
+                throw new ArgumentException("The Writer's name cannot be shorter than one character!");
+            }
+
             try
             {
                 autrepo.Create(newaut);

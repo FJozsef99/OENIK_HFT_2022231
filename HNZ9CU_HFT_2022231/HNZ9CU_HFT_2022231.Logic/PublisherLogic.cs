@@ -19,11 +19,16 @@ namespace HNZ9CU_HFT_2022231.Logic
             pubrepo = pubrep;
         }
 
-        public bool Create(Publisher newbook)
+        public bool Create(Publisher newpub)
         {
+            if (newpub.Name.Length < 1)
+            {
+                throw new ArgumentException("Please enter a valid name for the new publisher!");
+            }    
+
             try
             {
-                pubrepo.Create(newbook);
+                pubrepo.Create(newpub);
                 return true;
             }
             catch (Exception)
@@ -55,11 +60,11 @@ namespace HNZ9CU_HFT_2022231.Logic
             return pubrepo.ReadOne(id);
         }
 
-        public bool Update(Publisher newbook, int id)
+        public bool Update(Publisher newpub, int id)
         {
             try
             {
-                pubrepo.Update(newbook, id);
+                pubrepo.Update(newpub, id);
                 return true;
             }
             catch (Exception)
