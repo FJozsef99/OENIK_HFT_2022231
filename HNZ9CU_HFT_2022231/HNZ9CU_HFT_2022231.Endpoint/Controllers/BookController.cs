@@ -1,5 +1,6 @@
 ﻿using HNZ9CU_HFT_2022231.Logic;
 using HNZ9CU_HFT_2022231.Models;
+using HNZ9CU_HFT_2022231.Models.helperClasses;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
@@ -46,5 +47,11 @@ namespace HNZ9CU_HFT_2022231.Endpoint.Controllers
         }
 
         //noncrud
+        [Route("/pubsOfDeadWriters")]
+        [HttpGet]
+        public IEnumerable<PubName> PublishersOfDeadWriters()
+        {
+            return this.logic.PublishersOfDeadWriters();
+        }
     }
 }

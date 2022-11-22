@@ -11,7 +11,7 @@ namespace HNZ9CU_HFT_2022231.Logic
     {
         public bool Create(Author newbook);
         public Author ReadOne(int id);
-        public IQueryable<Author> ReadAll();
+        public IEnumerable<Author> ReadAll();
         public bool Update(Author newbook, int id);
         public bool Delete(int id);
     }

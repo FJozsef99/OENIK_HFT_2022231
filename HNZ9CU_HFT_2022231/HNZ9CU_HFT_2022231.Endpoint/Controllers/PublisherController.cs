@@ -1,5 +1,6 @@
 ﻿using HNZ9CU_HFT_2022231.Logic;
 using HNZ9CU_HFT_2022231.Models;
+using HNZ9CU_HFT_2022231.Models.helperClasses;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
@@ -43,6 +44,13 @@ namespace HNZ9CU_HFT_2022231.Endpoint.Controllers
         public void Delete(int id)
         {
             this.logic.Delete(id);
+        }
+
+        [Route("/pubsBestBooks")]
+        [HttpGet]
+        public IEnumerable<BestBooks> BestBooksInEveryPublisher()
+        {
+            return this.logic.BestBooksInEveryPublisher();
         }
     }
 }

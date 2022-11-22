@@ -10,7 +10,7 @@ namespace HNZ9CU_HFT_2022231.Repository
     {
         public void Create(T newitem);
         T ReadOne(int id);
-        IQueryable<T> ReadAll();
+        IEnumerable<T> ReadAll();
         abstract public void Update(T newitem, int id);
         public void Delete(int id);
     }

@@ -1,4 +1,5 @@
 ﻿using HNZ9CU_HFT_2022231.Models;
+using HNZ9CU_HFT_2022231.Models.helperClasses;
 using HNZ9CU_HFT_2022231.Repository;
 using System;
 using System.Collections.Generic;
@@ -12,10 +13,6 @@ namespace HNZ9CU_HFT_2022231.Logic
     public class BookLogic : IBookLogic
     {
         protected IBookRepository bookrepo;
-        protected IAuthorRepository authorrepo;
-        protected IPublisherRepository pubrepo;
-
-
 
         public BookLogic(IBookRepository bookrep)
         {
@@ -48,7 +45,7 @@ namespace HNZ9CU_HFT_2022231.Logic
             }
         }
 
-        public IQueryable<Book> ReadAll()
+        public IEnumerable<Book> ReadAll()
         {
             return bookrepo.ReadAll();
         }
@@ -71,34 +68,19 @@ namespace HNZ9CU_HFT_2022231.Logic
             }
         }
 
-        public double AvgRatingOfBestBookPublisher()
+        public IEnumerable<PubName> PublishersOfDeadWriters()
         {
-            throw new NotImplementedException();
-        }
+            var books = bookrepo.ReadAll();
 
-        public int FavouritePublisherSumPrice() // legkedveltebb kiadó könyveinek összára
-        {
-            var maxrating = pubrepo.ReadAll();//.Max(x => x.Rating);
-            //var q = pubrepo.ReadAll().Where(x => x.Rating == maxrating).First().Books.Sum(y => y.Price);
-
-            return 33333;
-        }
-
-        public List<Publisher> PublishersOfDeadWriters()
-        {
-            var deads = bookrepo.ReadAll().Where(x => x.Author.IsAlive == false).ToList();
-
-            var books = from x in bookrepo.ReadAll()
+            var pubs = from x in books
                         where x.Author.IsAlive == false
-                        group x by x.Publisher into g
-                        select g;
-            List<Publisher> ret = new List<Publisher>();
-            //foreach (var item in books)
-            //{
-            //    ret.Add(item);
-            //}
-            return null;
+                        orderby x.Publisher.Name
+                        group x.Publisher by x.Publisher.Name into g
+                        select new PubName {
+                            Name = g.Key
+                        };
 
+            return pubs;
         }
     }
 }

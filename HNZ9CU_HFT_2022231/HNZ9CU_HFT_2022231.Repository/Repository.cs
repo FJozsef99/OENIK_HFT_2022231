@@ -1,5 +1,6 @@
 ﻿using HNZ9CU_HFT_2022231.Data;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace HNZ9CU_HFT_2022231.Repository
@@ -23,7 +24,7 @@ namespace HNZ9CU_HFT_2022231.Repository
             dbctx.SaveChanges();
         }
 
-        public IQueryable<T> ReadAll()
+        public IEnumerable<T> ReadAll()
         {
             return dbctx.Set<T>();
         }

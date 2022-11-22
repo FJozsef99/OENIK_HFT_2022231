@@ -43,7 +43,7 @@ namespace HNZ9CU_HFT_2022231.Logic
             }
         }
 
-        public IQueryable<Author> ReadAll()
+        public IEnumerable<Author> ReadAll()
         {
             return autrepo.ReadAll();
         }

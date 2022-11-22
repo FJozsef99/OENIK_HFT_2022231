@@ -11,13 +11,13 @@ namespace HNZ9CU_HFT_2022231.Client
     {
         static void Main(string[] args)
         {
-            BooksDbContext db = new BooksDbContext();
+        //    BooksDbContext db = new BooksDbContext();
 
-            var q1 = db.Books.ToList();
+        //    var q1 = db.Books.ToList();
 
-            BookRepository bk = new BookRepository(db);
-            AuthorRepository au = new AuthorRepository(db);
-            PublisherRepository pu = new PublisherRepository(db);
+        //    BookRepository br = new BookRepository(db);
+        //    AuthorRepository ar = new AuthorRepository(db);
+        //    PublisherRepository pr = new PublisherRepository(db);
 
             
 
