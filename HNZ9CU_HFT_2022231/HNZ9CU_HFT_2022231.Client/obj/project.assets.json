@@ -18,6 +18,32 @@
           }
         }
       },
+      "ConsoleMenu-simple/2.4.3": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/ConsoleMenu.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/ConsoleMenu.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.9": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json.Bson": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/17.4.0": {
         "type": "package",
         "compile": {
@@ -584,6 +610,23 @@
           }
         }
       },
+      "Newtonsoft.Json.Bson/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "NuGet.Frameworks/5.11.0": {
         "type": "package",
         "compile": {
@@ -842,6 +885,40 @@
         "lib/netstandard2.1/Castle.Core.dll",
         "lib/netstandard2.1/Castle.Core.xml",
         "readme.txt"
+      ]
+    },
+    "ConsoleMenu-simple/2.4.3": {
+      "sha512": "wrjK/VTZU64eK0jXH3TAyw+omoYNrGtESk0FcdmPtCc4YhNQVEFdUgkioorS09dEPaTajRxQZU6Tg/uDl4Ofsg==",
+      "type": "package",
+      "path": "consolemenu-simple/2.4.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "consolemenu-simple.2.4.3.nupkg.sha512",
+        "consolemenu-simple.nuspec",
+        "lib/net5.0/ConsoleMenu.dll",
+        "lib/netstandard1.3/ConsoleMenu.dll"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.9": {
+      "sha512": "cuVhPjjNMSEFpKXweMNBbsG4RUFuuZpFBm8tSyw309U9JEjcnbB6n3EPb4xwgcy9bJ38ctIbv5G8zXUBhlrPWw==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.client/5.2.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NET.icon.png",
+        "NET_Library_EULA_ENU.txt",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/netstandard2.0/System.Net.Http.Formatting.dll",
+        "lib/netstandard2.0/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
+        "microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
+        "microsoft.aspnet.webapi.client.nuspec"
       ]
     },
     "Microsoft.CodeCoverage/17.4.0": {
@@ -1582,6 +1659,21 @@
         "packageIcon.png"
       ]
     },
+    "Newtonsoft.Json.Bson/1.0.1": {
+      "sha512": "5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
+      "type": "package",
+      "path": "newtonsoft.json.bson/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Newtonsoft.Json.Bson.dll",
+        "lib/net45/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
+        "newtonsoft.json.bson.1.0.1.nupkg.sha512",
+        "newtonsoft.json.bson.nuspec"
+      ]
+    },
     "NuGet.Frameworks/5.11.0": {
       "sha512": "eaiXkUjC4NPcquGWzAGMXjuxvLwc6XGKMptSyOGQeT0X70BUZObuybJFZLA0OfTdueLd3US23NBPTBb6iF3V1Q==",
       "type": "package",
@@ -1969,31 +2061,33 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "ConsoleMenu-simple >= 2.4.3",
       "HNZ9CU_HFT_2022231.Data >= 1.0.0",
       "HNZ9CU_HFT_2022231.Logic >= 1.0.0",
       "HNZ9CU_HFT_2022231.Models >= 1.0.0",
       "HNZ9CU_HFT_2022231.Repository >= 1.0.0",
-      "HNZ9CU_HFT_2022231.Test >= 1.0.0"
+      "HNZ9CU_HFT_2022231.Test >= 1.0.0",
+      "Microsoft.AspNet.WebApi.Client >= 5.2.9"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dzsozi\\.nuget\\packages\\": {},
+    "C:\\Users\\fjrow\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Client\\HNZ9CU_HFT_2022231.Client.csproj",
+      "projectUniqueName": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Client\\HNZ9CU_HFT_2022231.Client.csproj",
       "projectName": "HNZ9CU_HFT_2022231.Client",
-      "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Client\\HNZ9CU_HFT_2022231.Client.csproj",
-      "packagesPath": "C:\\Users\\Dzsozi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Client\\obj\\",
+      "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Client\\HNZ9CU_HFT_2022231.Client.csproj",
+      "packagesPath": "C:\\Users\\fjrow\\.nuget\\packages\\",
+      "outputPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dzsozi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fjrow\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2008,20 +2102,20 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj": {
-              "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj"
+            "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj": {
+              "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj"
             },
-            "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj": {
-              "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj"
+            "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj": {
+              "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj"
             },
-            "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj": {
-              "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj"
+            "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj": {
+              "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj"
             },
-            "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj": {
-              "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj"
+            "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj": {
+              "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj"
             },
-            "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Test\\HNZ9CU_HFT_2022231.Test.csproj": {
-              "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Test\\HNZ9CU_HFT_2022231.Test.csproj"
+            "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Test\\HNZ9CU_HFT_2022231.Test.csproj": {
+              "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Test\\HNZ9CU_HFT_2022231.Test.csproj"
             }
           }
         }
@@ -2035,6 +2129,16 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "ConsoleMenu-simple": {
+            "target": "Package",
+            "version": "[2.4.3, )"
+          },
+          "Microsoft.AspNet.WebApi.Client": {
+            "target": "Package",
+            "version": "[5.2.9, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

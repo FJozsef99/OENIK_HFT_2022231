@@ -82,7 +82,7 @@ namespace HNZ9CU_HFT_2022231.Logic
         {
             var books = bookrepo.ReadAll();
 
-            var pubs = from x in books
+            var pubs =  from x in books
                         where x.Author.IsAlive == false
                         orderby x.Publisher.Name
                         group x.Publisher by x.Publisher.Name into g

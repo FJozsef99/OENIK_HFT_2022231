@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj": {}
+    "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj": {
+    "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj",
+        "projectUniqueName": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj",
         "projectName": "HNZ9CU_HFT_2022231.Data",
-        "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj",
-        "packagesPath": "C:\\Users\\Dzsozi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\obj\\",
+        "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj",
+        "packagesPath": "C:\\Users\\fjrow\\.nuget\\packages\\",
+        "outputPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dzsozi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fjrow\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj": {
-                "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj"
+              "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj": {
+                "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj"
               }
             }
           }
@@ -87,20 +87,20 @@
         }
       }
     },
-    "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj": {
+    "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj",
+        "projectUniqueName": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj",
         "projectName": "HNZ9CU_HFT_2022231.Logic",
-        "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj",
-        "packagesPath": "C:\\Users\\Dzsozi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\obj\\",
+        "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\HNZ9CU_HFT_2022231.Logic.csproj",
+        "packagesPath": "C:\\Users\\fjrow\\.nuget\\packages\\",
+        "outputPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Logic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dzsozi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fjrow\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -115,11 +115,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj": {
-                "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj"
+              "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj": {
+                "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj"
               },
-              "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj": {
-                "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj"
+              "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj": {
+                "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj"
               }
             }
           }
@@ -153,20 +153,20 @@
         }
       }
     },
-    "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj": {
+    "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj",
+        "projectUniqueName": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj",
         "projectName": "HNZ9CU_HFT_2022231.Models",
-        "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj",
-        "packagesPath": "C:\\Users\\Dzsozi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\obj\\",
+        "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj",
+        "packagesPath": "C:\\Users\\fjrow\\.nuget\\packages\\",
+        "outputPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dzsozi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fjrow\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -212,20 +212,20 @@
         }
       }
     },
-    "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj": {
+    "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj",
+        "projectUniqueName": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj",
         "projectName": "HNZ9CU_HFT_2022231.Repository",
-        "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj",
-        "packagesPath": "C:\\Users\\Dzsozi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\obj\\",
+        "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\HNZ9CU_HFT_2022231.Repository.csproj",
+        "packagesPath": "C:\\Users\\fjrow\\.nuget\\packages\\",
+        "outputPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dzsozi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fjrow\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -240,11 +240,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj": {
-                "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj"
+              "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj": {
+                "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Data\\HNZ9CU_HFT_2022231.Data.csproj"
               },
-              "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj": {
-                "projectPath": "C:\\Users\\Dzsozi\\source\\repos\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj"
+              "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj": {
+                "projectPath": "H:\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231\\HNZ9CU_HFT_2022231.Models\\HNZ9CU_HFT_2022231.Models.csproj"
               }
             }
           }
