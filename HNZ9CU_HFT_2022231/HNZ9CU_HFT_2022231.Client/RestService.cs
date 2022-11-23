@@ -7,9 +7,9 @@ using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieDbApp.RestClient
+namespace HNZ9CU_HFT_2022231.Client
 {
-    class RestService
+    public class RestService
     {
         HttpClient client;
 
