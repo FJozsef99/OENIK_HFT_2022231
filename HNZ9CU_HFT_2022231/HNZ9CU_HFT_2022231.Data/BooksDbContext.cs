@@ -39,6 +39,24 @@ namespace HNZ9CU_HFT_2022231.Data
                     .OnDelete(DeleteBehavior.Cascade);
                 });
 
+            modelBuilder.Entity<Author>(
+                e =>
+                {
+                    e.HasMany(b => b.Books)
+                    .WithOne(c => c.Author)
+                    .HasForeignKey(c => c.AuthorId)
+                    .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity<Publisher>(
+                e =>
+                {
+                    e.HasMany(b => b.Books)
+                    .WithOne(c => c.Publisher)
+                    .HasForeignKey(c => c.PublisherId)
+                    .OnDelete(DeleteBehavior.Cascade);
+                });
+
             var books = new Book[]
             {
                 new Book(){ Id = 1, Title = "Elveszett Bárka", Price = 1233, RelaseDate = 2007, PagenNumber = 120, Rating = 4.5, AuthorId = 1, PublisherId = 1 },

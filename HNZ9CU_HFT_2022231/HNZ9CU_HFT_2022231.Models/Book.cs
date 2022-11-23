@@ -9,7 +9,7 @@ namespace HNZ9CU_HFT_2022231.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [JsonIgnore]
+        //[JsonIgnore]
         public int Id { get; set; }
         [MaxLength(100)]
         public string Title { get; set; }
@@ -19,6 +19,12 @@ namespace HNZ9CU_HFT_2022231.Models
         public int PagenNumber { get; set; }
         public double Rating { get; set; }
 
+        [NotMapped]
+        public virtual Author Author { get; set; }
+
+        [NotMapped]
+        public virtual Publisher Publisher { get; set; }
+
         [ForeignKey(nameof(Author))]
         [Required]
         public int AuthorId { get; set; }
@@ -26,12 +32,6 @@ namespace HNZ9CU_HFT_2022231.Models
         [ForeignKey(nameof(Publisher))]
         public int PublisherId { get; set; }
 
-        [NotMapped]
-        [JsonIgnore]
-        public virtual Author Author { get; set; }
-
-        [NotMapped]
-        [JsonIgnore]
-        public virtual Publisher Publisher { get; set; }
+       
     }
 }

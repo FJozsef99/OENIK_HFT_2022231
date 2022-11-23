@@ -25,11 +25,6 @@ namespace HNZ9CU_HFT_2022231.Logic
             {
                 throw new ArgumentException("The book's title cannot be shorter than 1 character!");
             }
-            else if (newbook.RelaseDate < newbook.Author.BirthDate)
-            {
-                throw new ArgumentException
-                    ($"The book's relase date cannot be sooner than the author's birthday! ({newbook.Author.BirthDate})");
-            }
 
             try
             {

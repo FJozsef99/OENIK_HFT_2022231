@@ -34,13 +34,13 @@ namespace HNZ9CU_HFT_2022231.Endpoint.Controllers
             this.logic.Create(value);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public void Put([FromBody] Book value, int id)
         {
             this.logic.Update(value, id);
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public void Delete(int id)
         {
             this.logic.Delete(id);

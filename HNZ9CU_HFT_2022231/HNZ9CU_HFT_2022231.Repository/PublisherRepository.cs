@@ -22,6 +22,7 @@ namespace HNZ9CU_HFT_2022231.Repository
             old.Address = newitem.Address;
             old.Rating = newitem.Rating;
             old.NumberOfPublishedBooks = newitem.NumberOfPublishedBooks;
+            dbctx.SaveChanges();
         }
     }
 }

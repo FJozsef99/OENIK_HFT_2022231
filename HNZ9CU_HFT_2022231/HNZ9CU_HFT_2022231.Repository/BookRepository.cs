@@ -22,6 +22,7 @@ namespace HNZ9CU_HFT_2022231.Repository
             oldb.Price = newitem.Price;
             oldb.PublisherId = newitem.PublisherId;
             oldb.Rating = newitem.Rating;
+            dbctx.SaveChanges();
         }
     }
 }
