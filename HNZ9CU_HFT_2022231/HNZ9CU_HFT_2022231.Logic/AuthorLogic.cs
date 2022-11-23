@@ -1,4 +1,5 @@
 ﻿using HNZ9CU_HFT_2022231.Models;
+using HNZ9CU_HFT_2022231.Models.helperClasses;
 using HNZ9CU_HFT_2022231.Repository;
 using System;
 using System.Collections.Generic;
@@ -48,6 +49,7 @@ namespace HNZ9CU_HFT_2022231.Logic
             }
         }
 
+
         public IEnumerable<Author> ReadAll()
         {
             return autrepo.ReadAll();
@@ -69,6 +71,23 @@ namespace HNZ9CU_HFT_2022231.Logic
             {
                 return false;
             }
+        }
+
+        //non cruds
+        public IEnumerable<DeadBookWithRating> GoodHunDeadWriters()
+        {
+            var hunDeads = autrepo.ReadAll()
+                .Where(x => (!(x.IsAlive) && x.Country == "Hungary"))
+                .Select(x => x);
+            var minRates = from x in hunDeads
+                           where x.Books.Average(z => z.Rating) > 5
+                           select new DeadBookWithRating() 
+                           {
+                               BookWriterName = x.Name,
+                               WritersBirthDate = x.BirthDate,
+                               AvgRating = x.Books.Average(z => z.Rating)
+                           };
+            return minRates;
         }
     }
 }

@@ -28,11 +28,13 @@ namespace HNZ9CU_HFT_2022231.Test
             var pubRep = new Mock<IPublisherRepository>();
 
             Book b1 = new Book() { Id = 1, Title = "Elveszett Bárka", Price = 1233, RelaseDate = 2007, PagenNumber = 120, Rating = 4.5, AuthorId = 1, PublisherId = 1 };
-            Book b2 = new Book() { Id = 2, Title = "Utazás a Holdba", Price = 1643, RelaseDate = 1999, PagenNumber = 431, Rating = 2.2, AuthorId = 2, PublisherId = 2 };
+            Book b2 = new Book() { Id = 2, Title = "Utazás a Holdba", Price = 1643, RelaseDate = 1999, PagenNumber = 431, Rating = 7, AuthorId = 2, PublisherId = 2 };
             Book b3 = new Book() { Id = 3, Title = "Leleményes Hangya", Price = 2495, RelaseDate = 1951, PagenNumber = 152, Rating = 8.3, AuthorId = 3, PublisherId = 3 };
+            Book b4 = new Book() { Id = 4, Title = "Leleményes Hangya 2", Price = 3000, RelaseDate = 1960, PagenNumber = 200, Rating = 6, AuthorId = 2, PublisherId = 3 };
+
 
             Author a1 = new Author() { Id = 1, BirthDate = 1969, IsAlive = true, Country = "Russia", Name = "Ivan Ivinics" };
-            Author a2 = new Author() { Id = 2, BirthDate = 1934, IsAlive = false, Country = "Hungary", Name = "Lajos Bárdos" };
+            Author a2 = new Author() { Id = 2, BirthDate = 1934, IsAlive = false, Country = "Hungary", Name = "Lajos Bárdos", Books = new List<Book> { b2, b4} };
             Author a3 = new Author() { Id = 3, BirthDate = 1950, IsAlive = false, Country = "Croatia", Name = "Luka Timoti" };
 
             Publisher p1 = new Publisher() { Id = 1, Name = "Best Books", City = "Budapest", Address = "Hungária krt. 44", EstablishDate = 2001, NumberOfPublishedBooks = 340, Rating = 3.7 };
@@ -42,16 +44,18 @@ namespace HNZ9CU_HFT_2022231.Test
             b1.Author = a1;
             b2.Author = a2;
             b3.Author = a3;
+            b4.Author = a2;
 
             b1.Publisher = p1;
             b2.Publisher = p2;
             b3.Publisher = p3;
+            b4.Publisher = p3;
 
             p1.Books = new List<Book>() { b1 };
             p2.Books = new List<Book>() { b2 };
-            p3.Books = new List<Book>() { b3 };
+            p3.Books = new List<Book>() { b3, b4 };
 
-            List<Book> Blist = new List<Book>{b1, b2, b3 };
+            List<Book> Blist = new List<Book> { b1, b2, b3, b4 };
             List<Author> Alist = new List<Author> { a1, a2, a3 };
             List<Publisher> Plist = new List<Publisher> { p1, p2, p3 };
 
@@ -107,6 +111,20 @@ namespace HNZ9CU_HFT_2022231.Test
             Assert.AreEqual(bb[0].BestBookName, "Utazás a Holdba");
             Assert.AreEqual(bb[1].BestBookName, "Elveszett Bárka");
             Assert.AreEqual(bb[2].BestBookName, "Leleményes Hangya");
+        }
+
+        [Test]
+        public void GoodHunDeadWritersTest()
+        {
+            var ret = authorLogic.GoodHunDeadWriters();
+            DeadBookWithRating d = new DeadBookWithRating
+            {
+                BookWriterName = "Lajos Bárdos",
+                AvgRating = 6.5,
+                WritersBirthDate = 1950
+            };
+            Assert.That(ret.ToList().Count() == 1);
+            Assert.That(ret.ToList()[0].BookWriterName == "Lajos Bárdos");
         }
     }
 }

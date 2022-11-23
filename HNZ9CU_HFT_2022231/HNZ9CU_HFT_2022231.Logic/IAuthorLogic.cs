@@ -1,4 +1,5 @@
 ﻿using HNZ9CU_HFT_2022231.Models;
+using HNZ9CU_HFT_2022231.Models.helperClasses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,9 @@ namespace HNZ9CU_HFT_2022231.Logic
         public IEnumerable<Author> ReadAll();
         public bool Update(Author newbook, int id);
         public bool Delete(int id);
+
+        //non crud
+        //All Dead Writer who has a book with at least 6 rating
+        public IEnumerable<DeadBookWithRating> GoodHunDeadWriters();
     }
 }

@@ -1,5 +1,6 @@
 ﻿using ConsoleTools;
 using HNZ9CU_HFT_2022231.Models;
+using HNZ9CU_HFT_2022231.Models.helperClasses;
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
@@ -50,7 +51,7 @@ namespace HNZ9CU_HFT_2022231.Client
             do
             {
                 Console.WriteLine("The book's rating?");
-                rate = double.Parse(Console.ReadLine());
+                rate = double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture); //6.7 = 6,7
             } while (!(rate > 0));
             newBook.Rating = rate;
 
@@ -123,7 +124,6 @@ namespace HNZ9CU_HFT_2022231.Client
 
             rs.Put(newBook, $"book/{oldbookid}");
             Console.WriteLine("Updated!");
-            Console.ReadLine();
         }
         static void BookDelete(RestService rs)
         {
@@ -131,7 +131,6 @@ namespace HNZ9CU_HFT_2022231.Client
             int id = Convert.ToInt32(Console.ReadLine());
             rs.Delete(id, "book");
             Console.WriteLine("Book deleted!");
-            Console.ReadLine();
         }
 
         static void AuthorCreate(RestService rs)
@@ -206,6 +205,14 @@ namespace HNZ9CU_HFT_2022231.Client
             Console.ReadLine();
         }
 
+        static void PublishersOfDeadWriters(RestService rs)
+        {
+            List<PubName> pubNames = rs.Get<PubName>("/pubsOfDeadWriters");
+            pubNames.ForEach(c => Console.WriteLine(c.Name));
+            Console.WriteLine("\nPress any key to continue!");
+            Console.ReadLine();
+        }
+
         static void Main(string[] args)
         {
             RestService rest = new RestService("http://localhost:19866/"); //endpoint name
@@ -234,11 +241,15 @@ namespace HNZ9CU_HFT_2022231.Client
                 .Add("Delete publisher!", () => PublisherDelete(rest))
                 .Add("Back", ConsoleMenu.Close);
 
+            var noncruds = new ConsoleMenu(args, level: 1)
+                .Add("PublishersOfDeadWriters", () => PublishersOfDeadWriters(rest))
+                .Add("Back", ConsoleMenu.Close);
 
             var menu = new ConsoleMenu(args, level: 0)
                 .Add("Books", () => bookSubMenu.Show())
                 .Add("Authors", () => authorSubMenu.Show())
                 .Add("Publishers", () => publisherSubMenu.Show())
+                .Add("Non Crud Methods", () => noncruds.Show())
                 .Add("Exit", ConsoleMenu.Close);
 
             menu.Show();

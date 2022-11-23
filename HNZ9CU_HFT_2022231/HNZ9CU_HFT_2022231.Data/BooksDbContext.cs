@@ -85,7 +85,7 @@ namespace HNZ9CU_HFT_2022231.Data
             {
                 new Author(){ Id = 1, BirthDate = 1940, IsAlive = true, Country = "Hungary", Name = "Sándor Petako"},
                 new Author(){ Id = 2, BirthDate = 1953, IsAlive = false, Country = "France", Name = "Fracios Glea"},
-                new Author(){ Id = 3, BirthDate = 1939, IsAlive = true, Country = "Hungary", Name = "Árpád Kalanti"},
+                new Author(){ Id = 3, BirthDate = 1939, IsAlive = false, Country = "Hungary", Name = "Árpád Kalanti"},
                 new Author(){ Id = 4, BirthDate = 1926, IsAlive = false, Country = "USA", Name = "Peter Perker"},
                 new Author(){ Id = 5, BirthDate = 1955, IsAlive = true, Country = "England", Name = "Wiliam Strong"},
                 new Author(){ Id = 6, BirthDate = 1969, IsAlive = true, Country = "Russia", Name = "Ivan Ivinics"},
@@ -97,9 +97,9 @@ namespace HNZ9CU_HFT_2022231.Data
             {
                 new Publisher(){ Id = 1, Name = "Best Books", City  = "Budapest", Address = "Hungária krt. 44", EstablishDate = 2001, NumberOfPublishedBooks = 340, Rating = 3.7},
                 new Publisher(){ Id = 2, Name = "Alexandro", City  = "Szeged", Address = "Iskola utca 13", EstablishDate = 2004, NumberOfPublishedBooks = 10, Rating = 2},
-                new Publisher(){ Id = 3, Name = "Hipogrif Kiadó", City  = "Budapest", Address = "Kálvin tér 36", EstablishDate = 2004, NumberOfPublishedBooks = 10, Rating = 2},
-                new Publisher(){ Id = 4, Name = "Ancient Cities", City  = "Budapest", Address = "Etele út 78", EstablishDate = 2004, NumberOfPublishedBooks = 10, Rating = 2},
-                new Publisher(){ Id = 5, Name = "Better Be Reader", City  = "Győr", Address = "Ortondia utca 29", EstablishDate = 2004, NumberOfPublishedBooks = 10, Rating = 2}
+                new Publisher(){ Id = 3, Name = "Hipogrif Kiadó", City  = "Budapest", Address = "Kálvin tér 36", EstablishDate = 1999, NumberOfPublishedBooks = 10, Rating = 7},
+                new Publisher(){ Id = 4, Name = "Ancient Cities", City  = "Budapest", Address = "Etele út 78", EstablishDate = 2010, NumberOfPublishedBooks = 10, Rating = 5.2},
+                new Publisher(){ Id = 5, Name = "Better Be Reader", City  = "Győr", Address = "Ortondia utca 29", EstablishDate = 2000, NumberOfPublishedBooks = 10, Rating = 8}
             };
 
             modelBuilder.Entity<Book>().HasData(books);
