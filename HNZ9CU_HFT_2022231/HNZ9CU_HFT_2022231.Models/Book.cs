@@ -9,7 +9,6 @@ namespace HNZ9CU_HFT_2022231.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        //[JsonIgnore]
         public int Id { get; set; }
         [MaxLength(100)]
         public string Title { get; set; }

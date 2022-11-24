@@ -90,7 +90,7 @@ namespace HNZ9CU_HFT_2022231.Data
                 new Author(){ Id = 5, BirthDate = 1955, IsAlive = true, Country = "England", Name = "Wiliam Strong"},
                 new Author(){ Id = 6, BirthDate = 1969, IsAlive = true, Country = "Russia", Name = "Ivan Ivinics"},
                 new Author(){ Id = 7, BirthDate = 1934, IsAlive = false, Country = "Hungary", Name = "Lajos Bárdos"},
-                new Author(){ Id = 8, BirthDate = 1950, IsAlive = false, Country = "Croatia", Name = "Luka Timoti"}
+                new Author(){ Id = 8, BirthDate = 1940, IsAlive = true, Country = "Croatia", Name = "Luka Timoti"}
             };
 
             var publishers = new Publisher[]

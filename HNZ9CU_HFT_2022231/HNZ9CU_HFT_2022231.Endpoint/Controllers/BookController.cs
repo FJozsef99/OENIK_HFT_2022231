@@ -53,5 +53,13 @@ namespace HNZ9CU_HFT_2022231.Endpoint.Controllers
         {
             return this.logic.PublishersOfDeadWriters();
         }
+
+        [Route("/CheapBooks")]
+        [HttpGet]
+        public IEnumerable<CheapBook> CheapBooks()
+        {
+            return this.logic.CheapBooks();
+        }
+        
     }
 }

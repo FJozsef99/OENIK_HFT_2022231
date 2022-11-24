@@ -19,5 +19,7 @@ namespace HNZ9CU_HFT_2022231.Logic
         //non crud
         //All Dead Writer who has a book with at least 6 rating
         public IEnumerable<DeadBookWithRating> GoodHunDeadWriters();
+        public IEnumerable<VeteranExpensiveWriters> AliveVeteranExpensiveWriters();
+
     }
 }

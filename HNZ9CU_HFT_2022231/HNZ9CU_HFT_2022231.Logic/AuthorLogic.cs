@@ -4,6 +4,7 @@ using HNZ9CU_HFT_2022231.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -81,13 +82,29 @@ namespace HNZ9CU_HFT_2022231.Logic
                 .Select(x => x);
             var minRates = from x in hunDeads
                            where x.Books.Average(z => z.Rating) > 5
-                           select new DeadBookWithRating() 
+                           select new DeadBookWithRating()
                            {
                                BookWriterName = x.Name,
                                WritersBirthDate = x.BirthDate,
                                AvgRating = x.Books.Average(z => z.Rating)
                            };
             return minRates;
+        }
+
+        public IEnumerable<VeteranExpensiveWriters> AliveVeteranExpensiveWriters()
+        {
+            var authors = autrepo.ReadAll()
+                .Where(x => x.BirthDate < 1944
+                && x.IsAlive
+                && x.Books.Sum(z => z.Price) > 4444)
+                .Select(w => new VeteranExpensiveWriters()
+                {
+                    WriterName = w.Name,
+                    BooksSumPrice = w.Books.Sum(r => r.Price),
+                    WritersBirthDate = w.BirthDate
+                });
+
+            return authors;
         }
     }
 }

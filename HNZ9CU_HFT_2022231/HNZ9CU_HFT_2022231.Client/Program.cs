@@ -208,10 +208,52 @@ namespace HNZ9CU_HFT_2022231.Client
         static void PublishersOfDeadWriters(RestService rs)
         {
             List<PubName> pubNames = rs.Get<PubName>("/pubsOfDeadWriters");
-            pubNames.ForEach(c => Console.WriteLine(c.Name));
+            pubNames.ForEach(c => Console.WriteLine("Publishers of dead writers: " + c.Name));
             Console.WriteLine("\nPress any key to continue!");
             Console.ReadLine();
         }
+
+        static void CheapBooks(RestService rs)
+        {
+            List<CheapBook> cheaps = rs.Get<CheapBook>("/CheapBooks");
+            cheaps.ForEach(c => Console.WriteLine($"Title: {c.BookTitle}, Price: {c.BookPrice}, Publisher: {c.PublisherName}"));
+            Console.WriteLine("\nPress any key to continue!");
+            Console.ReadLine();
+        }
+
+        static void GoodHunDeadWriters(RestService rs)
+        {
+            List<DeadBookWithRating> l = rs.Get<DeadBookWithRating>("/GoodDeadHun");
+            l.ForEach(x => Console.WriteLine($"Name: {x.BookWriterName}, AvgRating: {x.AvgRating}, Writer's Birth Date: {x.WritersBirthDate}"));
+            Console.WriteLine("\nPress any key to continue!");
+            Console.ReadLine();
+        }
+
+        static void AliveVeteranExpensiveWriters(RestService rs)
+        {
+            List<VeteranExpensiveWriters> l = rs.Get<VeteranExpensiveWriters>("/VetWriters");
+            l.ForEach(x => Console.WriteLine($"Name: {x.WriterName}, SumPrice Of books: {x.BooksSumPrice}, Writer's Birth Date: {x.WritersBirthDate}"));
+            Console.WriteLine("\nPress any key to continue!");
+            Console.ReadLine();
+        }
+
+        static void BestBooksInEveryPublisher(RestService rs)
+        {
+            List<BestBooks> l = rs.Get<BestBooks>("/pubsBestBooks");
+            l.ForEach(x => Console.WriteLine($"Publisher name: {x.PublisherName}, Book's title: {x.BestBookName}, Book's rating: {x.BookRating}"));
+            Console.WriteLine("\nPress any key to continue!");
+            Console.ReadLine();
+        }
+
+        static void PubAndBooksGoodRating(RestService rs)
+        {
+            List<GoodPublisher> l = rs.Get<GoodPublisher>("/GoodRatings");
+            l.ForEach(x => Console.WriteLine($"Publisher name: {x.PublisherName}, AvgRating: {x.OverAllRating}"));
+            Console.WriteLine("\nPress any key to continue!");
+            Console.ReadLine();
+        }
+
+
 
         static void Main(string[] args)
         {
@@ -243,6 +285,11 @@ namespace HNZ9CU_HFT_2022231.Client
 
             var noncruds = new ConsoleMenu(args, level: 1)
                 .Add("PublishersOfDeadWriters", () => PublishersOfDeadWriters(rest))
+                .Add("CheapBooks", () => CheapBooks(rest))
+                .Add("GoodHunDeadWriters", () => GoodHunDeadWriters(rest))
+                .Add("AliveVeteranExpensiveWriters", () => AliveVeteranExpensiveWriters(rest))
+                .Add("BestBooksInEveryPublisher", () => BestBooksInEveryPublisher(rest))
+                .Add("PubAndBooksGoodRating", () => PubAndBooksGoodRating(rest))
                 .Add("Back", ConsoleMenu.Close);
 
             var menu = new ConsoleMenu(args, level: 0)

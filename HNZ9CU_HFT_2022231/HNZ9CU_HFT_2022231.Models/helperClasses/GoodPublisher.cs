@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace HNZ9CU_HFT_2022231.Models.helperClasses
 {
-    public class BestBooks
+    public class GoodPublisher
     {
         public string PublisherName { get; set; }
-        public string BestBookName { get; set; }
-        public double BookRating { get; set; }
+        public double OverAllRating { get; set; }
     }
 }

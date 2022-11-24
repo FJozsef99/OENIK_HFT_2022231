@@ -19,5 +19,7 @@ namespace HNZ9CU_HFT_2022231.Logic
         
         //Halott írók kiadói listázva
         public IEnumerable<PubName> PublishersOfDeadWriters();
+
+        public IEnumerable<CheapBook> CheapBooks();
     }
 }

@@ -19,5 +19,9 @@ namespace HNZ9CU_HFT_2022231.Logic
         //non crud
         //Minden kiadó legsikeresebb könyve és annak ára
         public IEnumerable<BestBooks> BestBooksInEveryPublisher();
+
+        public IEnumerable<GoodPublisher> PubAndBooksGoodRating();
+
+
     }
 }

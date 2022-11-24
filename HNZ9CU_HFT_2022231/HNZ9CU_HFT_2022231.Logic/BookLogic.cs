@@ -87,5 +87,21 @@ namespace HNZ9CU_HFT_2022231.Logic
 
             return pubs;
         }
+
+        public IEnumerable<CheapBook> CheapBooks()
+        {
+            var r = from x in bookrepo.ReadAll()
+                    orderby x.Price ascending
+                    group x by x.Publisher into g
+                    select new CheapBook
+                    {
+                        PublisherName = g.Key.Name,
+                        BookAuthor = g.First().Author.Name,
+                        BookPrice = g.First().Price,
+                        BookTitle = g.First().Title
+                    };
+
+            return r;
+        }
     }
 }
