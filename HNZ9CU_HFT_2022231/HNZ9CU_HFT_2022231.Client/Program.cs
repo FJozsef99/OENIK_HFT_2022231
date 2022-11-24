@@ -6,11 +6,13 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 
 namespace HNZ9CU_HFT_2022231.Client
 {
     public class Program
     {
+        #region book crud
         static void BookCreate(RestService rs)
         {
             Book newBook = new Book();
@@ -132,11 +134,51 @@ namespace HNZ9CU_HFT_2022231.Client
             rs.Delete(id, "book");
             Console.WriteLine("Book deleted!");
         }
+        #endregion
+
+        #region author crud
 
         static void AuthorCreate(RestService rs)
         {
             Author newa = new Author();
-            //rs.Post(newBook, "book");
+
+            string name;
+            do
+            {
+                Console.WriteLine("Give the new author a name!");
+                name = Console.ReadLine();
+            } while (!(name.Length > 3));
+            newa.Name = name;
+
+            int bd;
+            do
+            {
+                Console.WriteLine("Give the new author a birth date!");
+                bd = int.Parse(Console.ReadLine());
+            } while (!(bd > 0));
+            newa.BirthDate = bd;
+
+            char a;
+            do
+            {
+                Console.WriteLine("Is she/he alive? (y/n)");
+                a = char.Parse(Console.ReadLine());
+            } while (!(a == 'y' || a == 'n'));
+            if(a == 'y')
+                newa.IsAlive = true;
+            else
+                newa.IsAlive = false;
+
+            string country;
+            do
+            {
+                Console.WriteLine("Wher is she/he from?");
+                country = Console.ReadLine();
+            } while (!(country.Length > 0));
+            newa.Country = country;
+
+            rs.Post(newa, "author");
+
             Console.WriteLine("Author added!");
         }
         static void AuthorReadAll(RestService rs)
@@ -157,6 +199,31 @@ namespace HNZ9CU_HFT_2022231.Client
         }
         static void AuthorUpdate(RestService rs)
         {
+            Console.WriteLine("Which author do you want to update? Type ID:");
+            int oldautid = int.Parse(Console.ReadLine());
+
+            Author a = new Author();
+
+            char alive;
+            do
+            {
+                Console.WriteLine("Is the author alive? (y/n)");
+                alive = char.Parse(Console.ReadLine());
+            } while (!(alive == 'y' || alive == 'n'));
+            if (alive == 'y')
+                a.IsAlive = true;
+            else
+                a.IsAlive = false;
+
+            string country;
+            do
+            {
+                Console.WriteLine("Give in the new country name!");
+                country = Console.ReadLine();
+
+            } while (country.Length > 0);
+
+            rs.Put(a, $"author/{oldautid}");
             Console.WriteLine("Updated!");
             Console.ReadLine();
         }
@@ -168,11 +235,65 @@ namespace HNZ9CU_HFT_2022231.Client
             Console.WriteLine("Author removed!");
             Console.ReadLine();
         }
+        #endregion
+
+        #region pulisher crud
 
         static void PublisherCreate(RestService rs)
         {
             Publisher newPublisher = new Publisher();
-            //rs.Post(newBook, "book");
+
+            string name;
+            do
+            {
+                Console.WriteLine("Give the new publisher a name!");
+                name = Console.ReadLine();
+            } while (!(name.Length > 3));
+            newPublisher.Name = name;
+
+            int date;
+            do
+            {
+                Console.WriteLine("Estabilish date of the new publisher:");
+                date = int.Parse(Console.ReadLine());
+            } while (!(date > 0));
+            newPublisher.EstablishDate = date;
+
+            string cit;
+            do
+            {
+                Console.WriteLine("Where is the new publisher located!");
+                cit = Console.ReadLine();
+            } while (!(cit.Length > 0));
+            newPublisher.City = cit;
+
+            string add;
+            do
+            {
+                Console.WriteLine("What is the new publisher's address?");
+                add = Console.ReadLine();
+            } while (!(add.Length > 0));
+            newPublisher.Address = add;
+
+            double rat;
+            do
+            {
+                Console.WriteLine("Rating of the new publisher: ");
+                rat = double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture); //6.7 = 6,7
+            } while (!(rat > 0));
+            newPublisher.Rating = rat;
+
+            int sum;
+            do
+            {
+                Console.WriteLine("How many books are published by the new publisher?");
+                sum = int.Parse(Console.ReadLine());
+            } while (!(sum >= 0));
+            newPublisher.NumberOfPublishedBooks = sum;
+
+
+            rs.Post(newPublisher, "publisher");
+
             Console.WriteLine("Publisher added!");
         }
         static void PublisherReadAll(RestService rs)
@@ -187,12 +308,52 @@ namespace HNZ9CU_HFT_2022231.Client
         {
             Console.WriteLine("Which publisher are you interested in? Give in an ID!");
             int id = int.Parse(Console.ReadLine());
-            Publisher searched = rs.Get<Publisher>(id, "book");
+            Publisher searched = rs.Get<Publisher>(id, "publisher");
             Console.WriteLine($"The searched publisher: Name: {searched.Name} Address: {searched.Address}");
             Console.ReadLine();
         }
         static void PublisherUpdate(RestService rs)
         {
+            Console.WriteLine("Which publisher do you want to update? Type ID:");
+            int oldpubid = int.Parse(Console.ReadLine());
+
+            Publisher p = new Publisher();
+
+            string cit;
+            do
+            {
+                Console.WriteLine("Where is the publisher located?");
+                cit = Console.ReadLine();
+            } while (!(cit.Length > 0));
+            p.City = cit;
+
+            string add;
+            do
+            {
+                Console.WriteLine("What is the publisher's addresss?");
+                add = Console.ReadLine();
+            } while (!(add.Length > 0));
+            p.Address = add;
+
+            double rat;
+            do
+            {
+                Console.WriteLine("New rating of the publisher: ");
+                rat = double.Parse(Console.ReadLine(), System.Globalization.CultureInfo.InvariantCulture); //6.7 = 6,7
+            } while (!(rat > 0));
+            p.Rating = rat;
+
+            int sum;
+            do
+            {
+                Console.WriteLine("What is the publisher's number of published books?");
+                sum = int.Parse(Console.ReadLine());
+            } while (!(sum > 0));
+            p.NumberOfPublishedBooks = sum;
+
+
+            rs.Put(p, $"publisher/{oldpubid}");
+
             Console.WriteLine("Updated!");
             Console.ReadLine();
         }
@@ -204,7 +365,9 @@ namespace HNZ9CU_HFT_2022231.Client
             Console.WriteLine("Publisher deleted!");
             Console.ReadLine();
         }
+        #endregion
 
+        #region non crud methods
         static void PublishersOfDeadWriters(RestService rs)
         {
             List<PubName> pubNames = rs.Get<PubName>("/pubsOfDeadWriters");
@@ -252,7 +415,7 @@ namespace HNZ9CU_HFT_2022231.Client
             Console.WriteLine("\nPress any key to continue!");
             Console.ReadLine();
         }
-
+        #endregion
 
 
         static void Main(string[] args)
