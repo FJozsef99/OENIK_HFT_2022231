@@ -80,7 +80,7 @@ namespace HNZ9CU_HFT_2022231.Client
         {
             Console.WriteLine("All books in the database: \n");
             var ra = rs.Get<Book>("book");
-            ra.ForEach(b => Console.WriteLine($"Title: {b.Title}\t Author: {b.Author.Name} \t Publisher: {b.Publisher.Name} "));
+            ra.ForEach(b => Console.WriteLine($"Title: {b.Title}, Price: {b.Price}"));
             Console.WriteLine("\nPress any key to close window!");
             Console.ReadLine();
         }
@@ -89,7 +89,8 @@ namespace HNZ9CU_HFT_2022231.Client
             Console.WriteLine("Which book are you interested in? Give in an ID!");
             int bookid = int.Parse(Console.ReadLine());
             Book searched = rs.Get<Book>(bookid, "book");
-            Console.WriteLine($"The searched book: Title: {searched.Title}, Writer's name: {searched.Author.Name}");
+            Console.WriteLine($"The searched book: Title: {searched.Title}, Price: {searched.Price}");
+            Console.WriteLine("\nPress any key to close window!");
             Console.ReadLine();
         }
         static void BookUpdate(RestService rs)
@@ -126,6 +127,8 @@ namespace HNZ9CU_HFT_2022231.Client
 
             rs.Put(newBook, $"book/{oldbookid}");
             Console.WriteLine("Updated!");
+            Console.WriteLine("\nPress any key to close window!");
+            Console.ReadLine();
         }
         static void BookDelete(RestService rs)
         {
@@ -133,6 +136,8 @@ namespace HNZ9CU_HFT_2022231.Client
             int id = Convert.ToInt32(Console.ReadLine());
             rs.Delete(id, "book");
             Console.WriteLine("Book deleted!");
+            Console.WriteLine("\nPress any key to close window!");
+            Console.ReadLine();
         }
         #endregion
 
@@ -195,6 +200,7 @@ namespace HNZ9CU_HFT_2022231.Client
             int id = int.Parse(Console.ReadLine());
             Author searched = rs.Get<Author>(id, "author");
             Console.WriteLine($"The searched author: Name: {searched.Name}, BirthDate: {searched.BirthDate}");
+            Console.WriteLine("\nPress any key to close window!");
             Console.ReadLine();
         }
         static void AuthorUpdate(RestService rs)
@@ -225,6 +231,7 @@ namespace HNZ9CU_HFT_2022231.Client
 
             rs.Put(a, $"author/{oldautid}");
             Console.WriteLine("Updated!");
+            Console.WriteLine("\nPress any key to close window!");
             Console.ReadLine();
         }
         static void AuthorDelete(RestService rs)
@@ -233,6 +240,7 @@ namespace HNZ9CU_HFT_2022231.Client
             int id = int.Parse(Console.ReadLine());
             rs.Delete(id, "author");
             Console.WriteLine("Author removed!");
+            Console.WriteLine("\nPress any key to close window!");
             Console.ReadLine();
         }
         #endregion
@@ -295,6 +303,8 @@ namespace HNZ9CU_HFT_2022231.Client
             rs.Post(newPublisher, "publisher");
 
             Console.WriteLine("Publisher added!");
+            Console.WriteLine("\nPress any key to close window!");
+            Console.ReadLine();
         }
         static void PublisherReadAll(RestService rs)
         {
@@ -310,6 +320,8 @@ namespace HNZ9CU_HFT_2022231.Client
             int id = int.Parse(Console.ReadLine());
             Publisher searched = rs.Get<Publisher>(id, "publisher");
             Console.WriteLine($"The searched publisher: Name: {searched.Name} Address: {searched.Address}");
+            
+            Console.WriteLine("\nPress any key to close window!");
             Console.ReadLine();
         }
         static void PublisherUpdate(RestService rs)
@@ -355,6 +367,7 @@ namespace HNZ9CU_HFT_2022231.Client
             rs.Put(p, $"publisher/{oldpubid}");
 
             Console.WriteLine("Updated!");
+            Console.WriteLine("\nPress any key to close window!");
             Console.ReadLine();
         }
         static void PublisherDelete(RestService rs)
@@ -363,6 +376,7 @@ namespace HNZ9CU_HFT_2022231.Client
             int id = int.Parse(Console.ReadLine());
             rs.Delete(id, "publisher");
             Console.WriteLine("Publisher deleted!");
+            Console.WriteLine("\nPress any key to close window!");
             Console.ReadLine();
         }
         #endregion
